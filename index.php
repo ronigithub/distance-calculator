@@ -25,9 +25,9 @@
 
   </head>
 <body onload="initialize()">
-	     <span id="distance"></span>
       <!-- location -->
       <div id="locationField">
+	          <span id="distance"></span>
               <input id="origin_autocpt" placeholder="Pickup location" onFocus="geolocate()" type="text"></input><br>
 
               <input id="desti_autocpt" placeholder="Dropoff location" onFocus="geolocate()" type="text"></input><br>

@@ -1,4 +1,8 @@
-.distance {}
+#distance {
+	padding: 0 5px;
+    color: #fff;
+    font-size: 20px;
+}
 #locationField {
 	margin: 50px auto;
 	width: 184px;
@@ -9,5 +13,6 @@
 input, button {
 	font-size: 14px;
 	margin-bottom: 5px;
-	padding: 10px
+	padding: 10px;
+	margin-top: 5px;
 }
