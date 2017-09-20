@@ -3,7 +3,8 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-    <title>Places Searchbox</title>
+    <title>Distance Calculator</title>
+    <link rel="stylesheet" href="style.css">
     <script>
       var autocomplete;
         function initialize() {
@@ -27,9 +28,9 @@
 	     <span id="distance"></span>
       <!-- location -->
       <div id="locationField">
-              <input id="origin_autocpt" placeholder="Origin" onFocus="geolocate()" type="text"></input><br>
+              <input id="origin_autocpt" placeholder="Pickup location" onFocus="geolocate()" type="text"></input><br>
 
-              <input id="desti_autocpt" placeholder="Destination" onFocus="geolocate()" type="text"></input><br>
+              <input id="desti_autocpt" placeholder="Dropoff location" onFocus="geolocate()" type="text"></input><br>
 
             <button>Fair Estimate</button>
           </div>
