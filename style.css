@@ -1,15 +1,15 @@
-#distance {
-	padding: 0 5px;
-    color: #fff;
-    font-size: 20px;
+body {font-family: arial;font-size: 15px;line-height: 18px;margin: 20px auto;width: 850px;background:#EEEEEE}
+.headeroption {background: #204562 ;height: 90px;overflow: hidden;}
+.headeroption h2{text-align: center;color: #fff;font-size: 35px; margin-top: 20px}
+.content{background: #fff;border: 6px solid #204562;font-size: 16px;line-height: 22px;margin-bottom: 1px;margin-top: 1px;min-height: 380px;overflow: hidden;padding: 10px;}
+.footeroption{height:75px;background:#204562;overflow:hidden;padding-top:15px;}
+.footeroption h2{text-align: center;color:#fff}
+.footeroption a{color:#fff; text-decoration: none;}
+
+#total_distance {
+    font-size: 13px;
 }
-#locationField {
-	margin: 50px auto;
-	width: 184px;
-	border: 1px dashed gray;
-	padding: 37px;
-	background: green;
-}
+
 input, button {
 	font-size: 14px;
 	margin-bottom: 5px;

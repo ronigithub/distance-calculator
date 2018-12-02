@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Distance Calculator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+      var autocomplete;
+        function initialize() {
+          pick_location = new google.maps.places.Autocomplete(
+              /** @type {HTMLInputElement} */(document.getElementById('pick_location')),
+              { types: ['geocode'] });
+          google.maps.event.addListener(pick_location, 'place_changed', function() {
+          });
+
+          dropoff_location = new google.maps.places.Autocomplete(
+              /** @type {HTMLInputElement} */(document.getElementById('dropoff_location')),
+              { types: ['geocode'] });
+          google.maps.event.addListener(dropoff_location, 'place_changed', function() {
+          });
+
+          // ==========================
+        }
+            
+    </script>
+
+  </head>
+<body onload="initialize()">
+    <header class="headeroption">
+      <h2>Distance calculator using Google Map API</h2>
+    </header>
+    <section class="content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div id="locationField">
+              <div id="total_distance" class="alert"></div>            
+              <div class="form-group">
+                <input id="pick_location" placeholder="Pickup location" type="text" class="form-control" />
+                <input id="dropoff_location" placeholder="Dropoff location"  type="text" class="form-control" />          
+                <input type="submit" value="Calculate" class="calculate btn btn-primary form-control">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="showmap">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- location -->
+      
+    </section>
+    
+    <footer class="footeroption">
+      <h2>
+        Copyright &copy; 
+        <script type="text/javascript">
+        var d = new Date()
+        document.write(d.getFullYear())
+        </script>
+        <a href="https://github.com/ronigithub/">Md. Josim Uddin Roni</a>
+      </h4>
+    </footer>
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCXgnq_q2NJSZrIGy25OfDpd6IYX9JOpe8&libraries=places"
+         async defer></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="fare.js"></script>
+      </body>
+</html>
